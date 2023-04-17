@@ -10,14 +10,14 @@ let shopProducts = [
     catogory: "bundle",
     details:
       "This fragrance-free, silicone-free and water-resistant non-nano tinted mineral SPF 50 (PA ++++) has a universally flattering tint that hydrates while protecting against daily oxidators like sun (broad spectrum UVA/UVB protection), pollution and blue light (HEV).",
-    img: "/assets/image 69.svg",
+    img: "/build/assets/image 69.svg",
   },
   {
     title: "Dark Circle Correcting Serum ",
     price: 800,
     quantity: 1,
     catogory: "bundle",
-    img: "/assets/image 69.svg",
+    img: "/build/assets/image 69.svg",
     details:
       "This fragrance-free, silicone-free and water-resistant non-nano tinted mineral SPF 50 (PA ++++) has a universally flattering tint that hydrates while protecting against daily oxidators like sun (broad spectrum UVA/UVB protection), pollution and blue light (HEV).",
   },
@@ -28,7 +28,7 @@ let shopProducts = [
     catogory: "bundle",
     details:
       "This fragrance-free, silicone-free and water-resistant non-nano tinted mineral SPF 50 (PA ++++) has a universally flattering tint that hydrates while protecting against daily oxidators like sun (broad spectrum UVA/UVB protection), pollution and blue light (HEV).",
-    img: "/assets/image 69.svg",
+    img: "/build/assets/image 69.svg",
   },
   {
     title: "Wrinkle Correcting Serum Mask (i)",
@@ -36,7 +36,7 @@ let shopProducts = [
     quantity: 1,
     catogory: "individual",
     details: "This 1",
-    img: "/assets/image 69.svg",
+    img: "/build/assets/image 69.svg",
   },
   {
     title: "Dark Circle Correcting Serum (i)",
@@ -44,7 +44,7 @@ let shopProducts = [
     quantity: 1,
     catogory: "individual",
     details: "2",
-    img: "/assets/image 69.svg",
+    img: "/build/assets/image 69.svg",
   },
   {
     title: "Face Whitining serum (i)",
@@ -53,7 +53,7 @@ let shopProducts = [
     catogory: "individual",
     details:
       "This fragrance-free, silicone-free and water-resistant non-nano tinted mineral SPF 50 (PA ++++) has a universally flattering tint that hydrates while protecting against daily oxidators like sun (broad spectrum UVA/UVB protection), pollution and blue light (HEV).",
-    img: "/assets/image 69.svg",
+    img: "/build/assets/image 69.svg",
   },
   {
     title: "Wrinkle Correcting Serum Mask (s)",
@@ -61,7 +61,7 @@ let shopProducts = [
     quantity: 1,
     catogory: "suggested",
     details: "1",
-    img: "/assets/image 69.svg",
+    img: "/build/assets/image 69.svg",
   },
   {
     title: "Dark Circle Correcting Serum (s)",
@@ -69,7 +69,7 @@ let shopProducts = [
     quantity: 1,
     catogory: "suggested",
     details: "2",
-    img: "/assets/image 69.svg",
+    img: "/build/assets/image 69.svg",
   },
   {
     title: "Face Whitining serum (s)",
@@ -77,7 +77,7 @@ let shopProducts = [
     quantity: 1,
     catogory: "suggested",
     details: "3",
-    img: "/assets/image 69.svg",
+    img: "/build/assets/image 69.svg",
   },
 ];
 
@@ -171,7 +171,7 @@ function showitems(e) {
       "product transition duration-200 ease-in cursor-pointer ";
     productDiv.innerHTML = `
       <div class="mx-w-[135px]  flex gap-7 pr-6 ">
-        <img src="/assets/image 69 bottle.svg" class=" " alt="" />
+        <img src="/build/assets/image 69 bottle.svg" class=" " alt="" />
         <div class="mx-w-[432px] w-full ">
           <div class="uppercase mx-w-[194px] w-full font-semibold mt-1.5 text-[16px] tracking-0.025em] ">
             <h1>${product.title}</h1>
@@ -261,7 +261,7 @@ showitems();
 
 //       productDiv.innerHTML = `
 //   <div class="mx-w-[135px]  flex gap-7 pr-6 ">
-//     <img src="/assets/image 69 bottle.svg" class=" " alt="" />
+//     <img src="/build/assets/image 69 bottle.svg" class=" " alt="" />
 //     <div class="mx-w-[432px] w-full ">
 //       <div class="uppercase mx-w-[194px] w-full font-semibold mt-1.5 text-[16px] tracking-0.025em] ">
 //         <h1>${product.title}</h1>
