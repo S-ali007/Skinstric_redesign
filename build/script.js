@@ -87,11 +87,6 @@ suggestedBtn.addEventListener("click", showitems);
 bundleBtn.addEventListener("click", showitems);
 individualBtn.addEventListener("click", showitems);
 
-
-
-
-
-
 // function showitems(e,default_parameter) {
 function showitems(e) {
   // let clickedBtn = default_parameter  ||  e.target;
@@ -115,10 +110,10 @@ function showitems(e) {
   const dataContainer = document.getElementById("data-container");
   dataContainer.innerHTML = "";
   let filter_products = [];
+
   if (clickedBtn == bundleBtn) {
     filter_products = shopProducts.filter(
       (product) => product.catogory === "bundle"
-
     );
   } else if (clickedBtn == individualBtn) {
     filter_products = shopProducts.filter(
@@ -130,66 +125,50 @@ function showitems(e) {
     );
   }
 
-
-
   filter_products.forEach((product, index) => {
     const productDiv = document.createElement("div");
-    // productDiv.setAttribute('id', `product${index + 1}`)
-    // console.log(productDiv)
-    productDiv.addEventListener("click", function() {
+    productDiv.setAttribute("id", `product${index}`);
+
+    if (index == 0) {
+      productDiv.style.backgroundColor = "#1A1B1C";
+      productDiv.style.color = "white";
+
+      let quantities = document.getElementsByClassName("quantity");
+      console.log(quantities);
+
+
+
+
+      // console.log(productDiv)
+    }
+
+    productDiv.addEventListener("click", function () {
       // Set styles for clicked product
       this.style.backgroundColor = "black";
       this.style.color = "white";
-  let quantites=document.getElementById(`quantity-${index}`)
-  quantites.parentElement.style.backgroundColor = "white";  
-  quantites.style.color = "black";  
+      let quantites = document.getElementById(`quantity-${index}`);
+      console.log(quantites);
+      quantites.parentElement.style.backgroundColor = "white";
+      quantites.style.color = "black";
       // Reset styles for previously clicked product
-      const allProducts = document.getElementsByClassName("product"); 
+      const allProducts = document.getElementsByClassName("product");
 
-      console.log(allProducts)
-
-
-
-
-
+      console.log(allProducts);
 
       for (let i = 0; i < allProducts.length; i++) {
-          if (i!=index) {
-              allProducts[i].style.backgroundColor = ""; 
-              allProducts[i].style.color = "";
-              let quantites=document.getElementById(`quantity-${i}`)
-              quantites.parentElement.style.backgroundColor = "";  
-              quantites.style.color = "";  
-              
-          }
+        if (i != index) {
+          allProducts[i].style.backgroundColor = "";
+          allProducts[i].style.color = "";
+
+          let quantites = document.getElementById(`quantity-${i}`);
+          quantites.parentElement.style.backgroundColor = "";
+          quantites.style.color = "";
+        }
       }
-  });
+    });
 
-  
-  
-  
-  
-  
-  
-
-
-
- 
-
-
-  
-
-
-    
-
-
-    
-  
-
-
- 
     productDiv.className =
-      "product transition duration-200 ease-in cursor-pointer";
+      "product transition duration-200 ease-in cursor-pointer ";
     productDiv.innerHTML = `
       <div class="mx-w-[135px]  flex gap-7 pr-6 ">
         <img src="/assets/image 69 bottle.svg" class=" " alt="" />
@@ -202,7 +181,7 @@ function showitems(e) {
           <span class="plus rotate-45 font-semibold w-[24px] flex justify-center text-base">
             <button class="-rotate-45" onclick="incrementQuantity(${index})">+</button>
           </span>
-          <span class="rotate-45 font-semibold w-[24px] flex justify-center text-base bg-[#1A1B1C] text-[white] ">
+          <span class="quantity rotate-45 font-semibold w-[24px] flex justify-center text-base bg-[#1A1B1C] text-[white] ">
             <p class="mt-0.5 -rotate-45" id="quantity-${index}">1</p>
           </span>
           <span class="minus rotate-45 font-semibold w-[24px] flex justify-center text-base">
@@ -217,7 +196,6 @@ function showitems(e) {
       </div>
       <div></div>
     `;
-
     // const paraContainer = document.getElementById("para-Container");
     // paraContainer.innerHTML = "";
     // let filter_products =[];
@@ -235,7 +213,6 @@ function showitems(e) {
         <p> ${product.details} 
         </p>
         `;
-
     }
     productDiv.addEventListener("click", details);
 
@@ -247,6 +224,7 @@ function showitems(e) {
     // } )
 
     // console.log(filter_products)
+    details();
 
     dataContainer.appendChild(productDiv);
   });
