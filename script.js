@@ -168,7 +168,7 @@ function showitems(e) {
     });
 
     productDiv.className =
-      "product transition duration-200 ease-in cursor-pointer ";
+      "product transition duration-200 ease-in cursor-pointer  ";
     productDiv.innerHTML = `
       <div class="mx-w-[135px]  flex gap-7 pr-6 ">
         <img src="/assets/image 69 bottle.svg" class=" " alt="" />
