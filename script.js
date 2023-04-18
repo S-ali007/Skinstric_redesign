@@ -358,3 +358,4 @@ function decrementQuantity(index) {
   let total = price * quantity;
   document.getElementById(`price_${index}`).innerText = total + " USD";
 }
+// hi
