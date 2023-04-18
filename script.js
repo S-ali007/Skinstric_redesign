@@ -144,7 +144,7 @@ function showitems(e) {
 
     productDiv.addEventListener("click", function () {
       // Set styles for clicked product
-      this.style.backgroundColor = "black";
+      this.style.backgroundColor = "#1A1B1C";
       this.style.color = "white";
       let quantites = document.getElementById(`quantity-${index}`);
       console.log(quantites);
