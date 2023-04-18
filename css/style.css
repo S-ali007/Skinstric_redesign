@@ -7,6 +7,26 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+.inter{
+  font-family: 'Inter', sans-serif;
+}
+  .custom-scroll::-webkit-scrollbar {
+          width: 2px;
+          height:2px;
+          background-color:rgba(#1a1b1c, 0.01);
+      }
+      .custom-scroll::-webkit-scrollbar-thumb {
+          background-color: #1a1b1c;
+          border-radius: 0px;
+      }
+
+
+      .lexend{
+          font-family: 'Lexend', sans-serif;
+      }
+  
+
+
 *,
 ::before,
 ::after {
@@ -24,6 +44,26 @@
 ::after {
   --tw-content: '';
 }
+
+.inter{
+    font-family: 'Inter', sans-serif;
+}
+    .custom-scroll::-webkit-scrollbar {
+            width: 2px;
+            height:2px;
+            background-color:rgba(#1a1b1c, 0.01);
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background-color: #1a1b1c;
+            border-radius: 0px;
+        }
+
+
+        .lexend{
+            font-family: 'Lexend', sans-serif;
+        }
+    
+
 
 /*
 1. Use a consistent sensible line-height in all browsers.
