@@ -11,6 +11,30 @@ let shopProducts = [
     details:
       "This fragrance-free, silicone-free and water-resistant non-nano tinted mineral SPF 50 (PA ++++) has a universally flattering tint that hydrates while protecting against daily oxidators like sun (broad spectrum UVA/UVB protection), pollution and blue light (HEV).",
     img: "/assets/image 69.svg",
+  }, {
+    title: "Wrinkle Correcting Serum Mask",
+    price: 400,
+    quantity: 1,
+    catogory: "bundle",
+    details:
+      "This fragrance-free, silicone-free and water-resistant non-nano tinted mineral SPF 50 (PA ++++) has a universally flattering tint that hydrates while protecting against daily oxidators like sun (broad spectrum UVA/UVB protection), pollution and blue light (HEV).",
+    img: "/assets/image 69.svg",
+  }, {
+    title: "Wrinkle Correcting Serum Mask",
+    price: 400,
+    quantity: 1,
+    catogory: "bundle",
+    details:
+      "This fragrance-free, silicone-free and water-resistant non-nano tinted mineral SPF 50 (PA ++++) has a universally flattering tint that hydrates while protecting against daily oxidators like sun (broad spectrum UVA/UVB protection), pollution and blue light (HEV).",
+    img: "/assets/image 69.svg",
+  }, {
+    title: "Wrinkle Correcting Serum Mask",
+    price: 400,
+    quantity: 1,
+    catogory: "bundle",
+    details:
+      "This fragrance-free, silicone-free and water-resistant non-nano tinted mineral SPF 50 (PA ++++) has a universally flattering tint that hydrates while protecting against daily oxidators like sun (broad spectrum UVA/UVB protection), pollution and blue light (HEV).",
+    img: "/assets/image 69.svg",
   },
   {
     title: "Dark Circle Correcting Serum ",
@@ -79,6 +103,35 @@ let shopProducts = [
     details: "3",
     img: "/assets/image 69.svg",
   },
+  {
+    title: "Face Whitining serum (s)",
+    price: 1000,
+    quantity: 1,
+    catogory: "suggested",
+    details: "3",
+    img: "/assets/image 69.svg",
+  }, {
+    title: "Face Whitining serum (s)",
+    price: 1000,
+    quantity: 1,
+    catogory: "suggested",
+    details: "3",
+    img: "/assets/image 69.svg",
+  }, {
+    title: "Face Whitining serum (s)",
+    price: 1000,
+    quantity: 1,
+    catogory: "suggested",
+    details: "3",
+    img: "/assets/image 69.svg",
+  }, {
+    title: "Face Whitining serum (s)",
+    price: 1000,
+    quantity: 1,
+    catogory: "suggested",
+    details: "3",
+    img: "/assets/image 69.svg",
+  }
 ];
 
 const colors = ["#1A1B1C", "white", "#F3F3F4"];
